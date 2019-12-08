@@ -1,0 +1,258 @@
+body {
+	background-image: url(../img/background.png);
+	background-size: 100%;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul {
+	list-style: none;
+}
+.main-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 40px 0 5px;
+	padding: 0px;
+	text-align: center;
+	background: rgba(34,34,34,.3);
+}
+.left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-menu li {
+	display: flex;
+	align-items: flex-end;
+}
+.main-menu li:after {
+	content: "|";
+	color: #606060;
+}
+.main-menu .main-menu-logo:after {content:none}
+.main-menu-img {
+	margin-top: 5px;
+	width: 60px;
+	margin-right: 3px;
+	font-weight: bold;
+}
+.main-menu-text {
+	color: white;
+	font-family: "MuseoSansCyrl-500", sans-serif;
+	font-size: 18px;
+}
+
+.main-menu li:last-child:after {content:none}
+.main-menu-item a {
+	text-decoration: none;
+	font-family: "Ubuntu Condensed", sans-serif;
+	letter-spacing: 1.9px;
+	position: relative;
+	padding-bottom: 0px;
+	/*padding-bottom: 20px;*/
+	margin: 0 34px 0 30px;
+	font-size: 17px;
+	text-transform: uppercase;
+	transition: color .2s;
+}
+
+.main-menu-logo a {
+	color: white !important;
+}
+.main-menu-item a, .main-menu a:visited {color: #9d999d;}
+.main-menu-item a.current, .main-menu a:hover{color: #86b3ff;}
+.main-menu-item a:before,
+.main-menu-item a:after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	top: auto;
+	right: 50%;
+	bottom: -125%;
+	left: 50%;
+	background: #86b3ff;
+	transition: .8s;
+}
+.main-menu-item a:hover:before, .main-menu .current:before {left: 0;}
+.main-menu-item a:hover:after, .main-menu .current:after {right: 0;}
+
+.transport-box p{
+	margin-top: 0px;
+	padding-top: 45px;
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	object-fit: contain;
+}
+.car {
+	margin-top: -25px;
+	width: 230px;
+}
+.boat {
+	margin-top: -25px;
+	width: 230px;
+}
+.helicopter {
+	margin-top: -50px;
+	width: 230px;
+}
+.other {
+	margin-top: -50px;
+	width: 230px;
+}
+.logo {
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	text-align: center;
+	color: white;
+	font-family: "MuseoSansCyrl-700", sans-serif;
+	font-size: 22px;
+	margin-top: 15px;
+}
+.line {
+	width: 800px;
+	border-style: solid;
+	border-color: white;
+	margin-top: 2px;
+}
+.transport {
+	display: flex;
+	flex-direction: column;
+}
+.transport-line {
+	font-family: "Ubuntu Condensed", sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.transport-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 15px 25px 0px rgba(66, 79, 113, 0.15);
+	text-shadow: 0px 15px 25px rgba(66, 79, 113, 0.15);
+	border-radius: 7px;
+	margin: 15px;
+	background-color: #fff;
+	padding: 10px;
+	padding-bottom: 25px;
+	text-align: center;
+	width: 100%;
+}
+.server-info {
+	margin-bottom: 13px;
+	font-size: 17px;
+}
+.btn {
+	color: #ffffff;
+	font-family: 'MuseoSansCyrl-300', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	border-radius: 3px;
+	padding: 10px 12px;
+	background-color: #5a6b97;
+	border-color: transparent;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+}
+
+.transport-table, .water-table, .air-table, .other-table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto 20px;
+	display: table;
+    border-spacing: 2px;
+    border-color: grey;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.transport-table th, .water-table th, .air-table th, .other-table th{
+    font-size: 17px;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+    padding: 8px;
+	display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+.transport-table td, .water-table td, .air-table td, .other-table td {
+	background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+    padding: 8px;
+	transition: .3s linear;
+}
+.transport-table tr:hover td, .water-table tr:hover td, .air-table tr:hover td, .other-table tr:hover td{
+	background: #ccddff; 
+}
+#searchInp {
+	font-size: 16px;
+	padding: 12px 20px 12px 20px; 
+	border: 1px solid #ddd; 
+	margin-top: 5px; 
+	margin-bottom: 12px; 
+	width: 96.5%;
+	border-radius: 7px;
+}
+.tName {
+	color: white;
+	font-family: "MuseoSansCyrl-700", sans-serif;
+	font-size: 20px;
+	margin-top: 15px;
+}
+div .warn {
+	font-family: "MuseoSansCyrl-700", sans-serif;
+	margin-top: 0px;
+	padding: 12px;
+	overflow: hidden;
+	object-fit: contain;
+	background: rgba(34,34,34,.3);
+	border: 1px solid #bbb;
+	border-radius: 7px;
+	color: white;
+}
+.usd-eur {
+	color: green;
+}
+.fixtable-fixed {
+	position: fixed;
+	top: 0;
+	z-index: 101;
+	background: #b9c9fe;
+	display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+	border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+	padding: 8px;
+	width: 95%;
+}

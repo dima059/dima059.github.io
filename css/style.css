@@ -1,0 +1,176 @@
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../img/ui.totop.png) no-repeat left top;
+}
+
+#toTopHover {
+	background:url(../img/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+body {
+	background-image: url(../img/background.png);
+	background-size: 100%;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul {
+	list-style: none;
+}
+.main-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 40px 0 5px;
+	padding: 0px;
+	text-align: center;
+	background: rgba(34,34,34,.3);
+}
+.left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-menu li {
+	display: flex;
+	align-items: flex-end;
+}
+.main-menu li:after {
+	content: "|";
+	color: #606060;
+}
+.main-menu .main-menu-logo:after {content:none}
+.main-menu-img {
+	margin-top: 5px;
+	width: 60px;
+	margin-right: 3px;
+	font-weight: bold;
+}
+.main-menu-text {
+	color: white;
+	font-family: "MuseoSansCyrl-500", sans-serif;
+	font-size: 18px;
+}
+
+.main-menu li:last-child:after {content:none}
+.main-menu-item a {
+	text-decoration: none;
+	font-family: "Ubuntu Condensed", sans-serif;
+	letter-spacing: 1.9px;
+	position: relative;
+	padding-bottom: 0px;
+	/*padding-bottom: 20px;*/
+	margin: 0 34px 0 30px;
+	font-size: 17px;
+	text-transform: uppercase;
+	transition: color .2s;
+}
+
+.main-menu-logo a {
+	color: white !important;
+}
+.main-menu-item a, .main-menu a:visited {color: #9d999d;}
+.main-menu-item a.current, .main-menu a:hover{color: #86b3ff;}
+.main-menu-item a:before,
+.main-menu-item a:after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	top: auto;
+	right: 50%;
+	bottom: -125%;
+	left: 50%;
+	background: #86b3ff;
+	transition: .8s;
+}
+.main-menu-item a:hover:before, .main-menu .current:before {left: 0;}
+.main-menu-item a:hover:after, .main-menu .current:after {right: 0;}
+
+.logo {
+	width: 100%;
+	height: 100%;
+}
+
+.header-servers {
+	text-align: center;
+	color: white;
+	font-family: "MuseoSansCyrl-700", sans-serif;
+	font-size: 22px;
+	margin-top: 15px;
+}
+.line {
+	width: 800px;
+	border-style: solid;
+	border-color: white;
+	margin-top: 2px;
+}
+.servers {
+	display: flex;
+	flex-direction: column;
+}
+.servers-1-line {
+	font-family: "Ubuntu Condensed", sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.servers-2-line {
+	font-family: "Ubuntu Condensed", sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.server-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 15px 25px 0px rgba(66, 79, 113, 0.15);
+	text-shadow: 0px 15px 25px rgba(66, 79, 113, 0.15);
+	border-radius: 7px;
+	margin: 15px;
+	background-color: #fff;
+	padding: 25px;
+	text-align: center;
+}
+.server-info {
+	margin-bottom: 13px;
+	font-size: 17px;
+}
+.connect-btn {
+	color: #ffffff;
+	font-family: 'MuseoSansCyrl-300', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	border-radius: 3px;
+	padding: 1.1em 2.5em;
+	background-color: #5a6b97;
+	border-color: transparent;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+}
