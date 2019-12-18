@@ -172,13 +172,13 @@ ul {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 16px;
     background: white;
-    width: 100%;
+    /*width: 100%;
     border-collapse: collapse;
     text-align: left;
     margin: 0 auto 20px;
 	display: table;
     border-spacing: 2px;
-    border-color: grey;
+    border-color: grey;*/
 }
 tbody {
     display: table-row-group;
