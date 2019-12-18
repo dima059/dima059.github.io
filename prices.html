@@ -51,15 +51,18 @@
 	<input type="text" id="searchInp" onkeyup="searchTransport()" placeholder="Найти транспорт..">
 	<p><a name="cars"></a></p>
 	<p class="tName">Легковые автомобили:</p>
-	<table class="transport-table">
-		<tbody>
+	<!--<table class="transport-table">-->
+  <table class="table table-hover">
+		<thead>
 			<tr>
-			<th>Название</th>
-			<th>Цена салона</th>
-			<th>Цена б/у</th>
-			<th>Цена продажи на б/у</th>
-			<th>Цена за донат</th>
+			<th scope="col">Название</th>
+			<th scope="col">Цена салона</th>
+			<th scope="col">Цена б/у</th>
+			<th scope="col">Цена продажи на б/у</th>
+			<th scope="col">Цена за донат</th>
 			</tr>
+    </thead>
+    <tbody>
 			<tr><td>ВАЗ 1111 Ока</td><td>25.000 ₽</td><td>-</td><td>17.500 ₽</td><td>4 ₽</td></tr>
 			<tr><td>ВАЗ 2107</td><td>70.000 ₽</td><td>-</td><td>49.000 ₽</td><td>13 ₽</td></tr>
 			<tr><td>ВАЗ 2108</td><td>75.000 ₽</td><td>-</td><td>52.500 ₽</td><td>14 ₽</td></tr>
