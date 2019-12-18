@@ -154,7 +154,7 @@ ul {
 	margin-bottom: 13px;
 	font-size: 17px;
 }
-.btn {
+.my-btn {
 	color: #ffffff;
 	font-family: 'MuseoSansCyrl-300', sans-serif;
 	font-weight: 300;
@@ -172,13 +172,21 @@ ul {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 16px;
     background: white;
-    /*width: 100%;
+    width: 100%;
     border-collapse: collapse;
     text-align: left;
     margin: 0 auto 20px;
 	display: table;
     border-spacing: 2px;
-    border-color: grey;*/
+    border-color: grey;
+}
+
+.my-table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 16px;
+    background: #e8edff;
+		color: #669;
+		transition: .3s linear;
 }
 tbody {
     display: table-row-group;
@@ -190,8 +198,9 @@ tr {
     vertical-align: inherit;
     border-color: inherit;
 }
-.transport-table th, .water-table th, .air-table th, .other-table th{
-    font-size: 17px;
+.transport-table th, .water-table th, .air-table th, .other-table th, .my-table th{
+		position: sticky; top: 0;
+		font-size: 17px;
     background: #b9c9fe;
     border-top: 4px solid #aabcfe;
     border-bottom: 1px solid #fff;
@@ -202,7 +211,7 @@ tr {
     font-weight: bold;
     text-align: -internal-center;
 }
-.transport-table td, .water-table td, .air-table td, .other-table td {
+.transport-table td, .water-table td, .air-table td, .other-table td, .my-table td{
 	background: #e8edff;
     border-bottom: 1px solid #fff;
     color: #669;
@@ -210,7 +219,7 @@ tr {
     padding: 8px;
 	transition: .3s linear;
 }
-.transport-table tr:hover td, .water-table tr:hover td, .air-table tr:hover td, .other-table tr:hover td{
+.transport-table tr:hover td, .water-table tr:hover td, .air-table tr:hover td, .other-table tr:hover td, .my-table tr:hover td{
 	background: #ccddff;
 }
 #searchInp {
