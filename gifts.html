@@ -13,37 +13,37 @@
     </form>
     <script>
       function myF() {
-        var integ, input, char;
-        integ = document.getElementById("integ");
-        char = document.getElementById("char");
-        input = document.getElementById("inp");
-        var ind = input.value.toString().indexOf('?', 1);
-		var giftlink = input.value.toString().substr(0, ind);
+          var integ, input, char;
+          integ = document.getElementById("integ");
+          char = document.getElementById("char");
+          input = document.getElementById("inp");
+          var ind = input.value.toString().indexOf('?', 1);
+		      var giftlink = input.value.toString().substr(0, ind);
 
-		var ack = input.value.toString().indexOf('ft/', 1);
-		var link = giftlink.toString().slice(0, ack+3);
+      		var ack = input.value.toString().indexOf('ft/', 1);
+      		var link = giftlink.toString().slice(0, ack+3);
 
-		var code = giftlink.toString().slice(ack+3, giftlink.length);
+      		var code = giftlink.toString().slice(ack+3, giftlink.length);
 
-		var zvezda = code.toString().indexOf('*');
+      		var zvezda = code.toString().indexOf('*');
 
-		var firstCode = code.toString().slice(0, zvezda);
-		var secondCode = code.toString().slice(zvezda+1, code.length);
-        if (integ.checked)
-        {
-			for (let i = 0; i < 10; i++)
-			{
-				 console.log(link+firstCode+i+secondCode);
-			}
+      		var firstCode = code.toString().slice(0, zvezda);
+      		var secondCode = code.toString().slice(zvezda+1, code.length);
+          if (integ.checked)
+          {
+      			for (let i = 0; i < 10; i++)
+      			{
+      				 window.open(link+firstCode+i+secondCode);
+      			}
+          }
+          else {
+      			var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      			for (let i = 0; i < 26; i++)
+      			{
+      				 window.open(link+firstCode+abc[i]+secondCode);
+      			}
+          }
         }
-        else {
-			var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-			for (let i = 0; i < 26; i++)
-			{
-				 console.log(link+firstCode+abc[i]+secondCode);
-			}
-        }
-      }
     </script>
   </body>
 </html>
