@@ -8,7 +8,7 @@
     <form>
         <input type="radio" name="type" value="integ" id="integ"> Число<Br>
         <input type="radio" name="type" value="char" id="char"> Буква<Br>
-        <input type="text" id="inp">
+        <input type="text" id="inp" size="50">
         <input type="button" value="Отправить" onclick="myF();">
     </form>
     <script>
@@ -17,18 +17,32 @@
         integ = document.getElementById("integ");
         char = document.getElementById("char");
         input = document.getElementById("inp");
-        var ind = input.indexOf('?', 1);
-        var giftlink = input.substr(0, ind);
+        var ind = input.value.toString().indexOf('?', 1);
+		var giftlink = input.value.toString().substr(0, ind);
         alert (giftlink);
+		var ack = input.value.toString().indexOf('ft/', 1);
+		var link = giftlink.toString().slice(0, ack+3);
+		alert(link);
+		var code = giftlink.toString().slice(ack+3, giftlink.length);
+		alert(code);
+		var zvezda = code.toString().indexOf('*');
+		alert(zvezda);
+		var firstCode = code.toString().slice(0, zvezda);
+		var secondCode = code.toString().slice(zvezda+1, code.length);
         if (integ.checked)
         {
-            //https://store.steampowered.com/account/ackgift/*F4BF4DFA6162276?redeemer=mfcgkntqb%40emlpro.com
-
+			for (let i = 0; i < 10; i++)
+			{
+				 console.log(link+firstCode+i+secondCode);
+			}
         }
         else {
-
+			var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			for (let i = 0; i < 26; i++)
+			{
+				 console.log(link+firstCode+abc[i]+secondCode);
+			}
         }
-        //input.value
       }
     </script>
   </body>
