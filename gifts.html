@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gifts</title>
+  </head>
+  <body>
+    <form>
+        <input type="radio" name="type" value="integ" id="integ"> Число<Br>
+        <input type="radio" name="type" value="char" id="char"> Буква<Br>
+        <input type="text" id="inp">
+        <input type="button" value="Отправить" onclick="myF();">
+    </form>
+    <script>
+      function myF() {
+        var integ, input, char;
+        integ = document.getElementById("integ");
+        char = document.getElementById("char");
+        input = document.getElementById("inp");
+        var ind = input.indexOf('?', 1);
+        var giftlink = input.substr(0, ind);
+        alert (giftlink);
+        if (integ.checked)
+        {
+            //https://store.steampowered.com/account/ackgift/*F4BF4DFA6162276?redeemer=mfcgkntqb%40emlpro.com
+
+        }
+        else {
+
+        }
+        //input.value
+      }
+    </script>
+  </body>
+</html>
