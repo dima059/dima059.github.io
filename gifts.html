@@ -4,24 +4,26 @@
     <meta charset="utf-8">
     <title>Gifts</title>
     <style>
-		input[type=radio] {
-			height:20px; width:20px; vertical-align: middle;
-		}
-		p {
-			font-size: 20px;
-		}
-		input[type=text] {
-			font-size: 20px;
-		}
-		input[type=button] {
-			font-size: 20px;
-		}
-	</style>
+    		input[type=radio] {
+    			height:20px; width:20px; vertical-align: middle; margin: 5px;
+    		}
+    		div {
+    			font-size: 20px;
+    		}
+    		input[type=text] {
+    			font-size: 20px;
+    		}
+    		input[type=button] {
+    			font-size: 20px;
+    		}
+    </style>
   </head>
   <body>
     <form>
-      <p><input type="radio" name="type" value="integ" id="integ"> Число</p>
-      <p><input type="radio" name="type" value="char" id="char"> Буква</p>
+      <div>
+        <input type="radio" name="type" value="integ" id="integ"> <label for="integ">Число</label><br>
+        <input type="radio" name="type" value="char" id="char"> <label for="char">Буква</label><br>
+      </div>
       <input type="text" id="inp" size="50">
       <input type="button" value="Отправить" onclick="myF();">
     </form>
