@@ -3,13 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Gifts</title>
+    <style>
+		input[type=radio] {
+			height:20px; width:20px; vertical-align: middle;
+		}
+		p {
+			font-size: 20px;
+		}
+		input[type=text] {
+			font-size: 20px;
+		}
+		input[type=button] {
+			font-size: 20px;
+		}
+	</style>
   </head>
   <body>
     <form>
-        <input type="radio" name="type" value="integ" id="integ"> Число<Br>
-        <input type="radio" name="type" value="char" id="char"> Буква<Br>
-        <input type="text" id="inp" size="50">
-        <input type="button" value="Отправить" onclick="myF();">
+      <p><input type="radio" name="type" value="integ" id="integ"> Число</p>
+      <p><input type="radio" name="type" value="char" id="char"> Буква</p>
+      <input type="text" id="inp" size="50">
+      <input type="button" value="Отправить" onclick="myF();">
     </form>
     <script>
       function myF() {
