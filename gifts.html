@@ -4,30 +4,35 @@
     <meta charset="utf-8">
     <title>Gifts</title>
     <style>
-    		input[type=radio] {
-    			height:20px; width:20px; vertical-align: middle; margin: 5px;
-    		}
-    		div {
-    			font-size: 20px;
-    		}
-    		input[type=text] {
-    			font-size: 20px;
-          border: 0.5px solid black;
-          height: 25px;
-    		}
-    		input[type=button] {
-    			font-size: 20px;
-    		}
+		input[type=radio] {
+			height:20px; width:20px; vertical-align: middle; margin: 5px;
+		}
+		div {
+			font-size: 20px;
+		}
+		input[type=text] {
+			font-size: 20px;
+			border: 0.5px solid black;
+			height: 25px;
+		}
+		input[type=button] {
+			font-size: 20px;
+		}
+		p {
+			font-size: 20px;
+			visibility: hidden;
+		}
     </style>
   </head>
   <body>
     <form>
       <div>
         <input type="radio" name="type" value="integ" id="integ"> <label for="integ">Число</label><br>
-        <input type="radio" name="type" value="char" id="char"> <label for="char">Буква</label><br>
+        <input type="radio" name="type" value="char" id="char" > <label for="char">Буква</label><br>
       </div>
       <input type="text" id="inp" size="50">
       <input type="button" value="Отправить" onclick="myF();">
+	  <p id="enterLink">!!!</p>
     </form>
     <script>
       function myF() {
@@ -35,31 +40,47 @@
           integ = document.getElementById("integ");
           char = document.getElementById("char");
           input = document.getElementById("inp");
-          var ind = input.value.toString().indexOf('?', 1);
-		      var giftlink = input.value.toString().substr(0, ind);
-
-      		var ack = input.value.toString().indexOf('ft/', 1);
-      		var link = giftlink.toString().slice(0, ack+3);
-
-      		var code = giftlink.toString().slice(ack+3, giftlink.length);
-
-      		var zvezda = code.toString().indexOf('*');
-
-      		var firstCode = code.toString().slice(0, zvezda);
-      		var secondCode = code.toString().slice(zvezda+1, code.length);
-          if (integ.checked)
+		  var warn = document.getElementById("enterLink");
+          if (input.value != "" && (integ.checked || char.checked))
           {
-      			for (let i = 0; i < 10; i++)
-      			{
-      				 window.open(link+firstCode+i+secondCode);
-      			}
+			warn.style.visibility="hidden";
+            var ind = input.value.toString().indexOf('?', 1);
+  		    var giftlink = input.value.toString().substr(0, ind);
+
+			var ack = input.value.toString().indexOf('ft/', 1);
+			var link = giftlink.toString().slice(0, ack+3);
+
+			var code = giftlink.toString().slice(ack+3, giftlink.length);
+
+			var zvezda = code.toString().indexOf('*');
+
+			var firstCode = code.toString().slice(0, zvezda);
+			var secondCode = code.toString().slice(zvezda+1, code.length);
+
+            if (integ.checked)
+            {
+				for (let i = 0; i < 10; i++)
+				{
+					 window.open(link+firstCode+i+secondCode);
+				}
+            }
+            else {
+				var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+				for (let i = 0; i < 26; i++)
+				{
+					 window.open(link+firstCode+abc[i]+secondCode);
+				}
+              }
           }
           else {
-      			var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      			for (let i = 0; i < 26; i++)
-      			{
-      				 window.open(link+firstCode+abc[i]+secondCode);
-      			}
+			if (input.value == "") {
+				warn.textContent = "Введите ссылку!!!";
+				warn.style.visibility="visible";
+			}
+			else {
+				warn.textContent = "Выберите один из вариантов!!!";
+				warn.style.visibility="visible";
+			}
           }
         }
     </script>
