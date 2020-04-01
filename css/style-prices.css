@@ -131,7 +131,7 @@ ul {
 	margin-top: 15px;
 }
 .line {
-	width: 800px;
+	width: 90%;
 	border-style: solid;
 	border-color: white;
 	margin-top: 2px;
@@ -165,7 +165,6 @@ ul {
 	font-size: 17px;
 }
 .my-btn {
-	color: #ffffff;
 	font-family: 'MuseoSansCyrl-300', sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -173,9 +172,13 @@ ul {
 	letter-spacing: 0px;
 	border-radius: 3px;
 	padding: 10px 12px;
-	background-color: #5a6b97;
-	border-color: transparent;
+	color: #ffffff !important;
+	background-color: #5a6b97 !important;
+	border-color: transparent !important;
 	box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+}
+.btn-primary {
+
 }
 
 .transport-table, .water-table, .air-table, .other-table {
