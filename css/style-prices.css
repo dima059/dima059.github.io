@@ -177,15 +177,15 @@ ul {
 	border-color: transparent !important;
 	box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
 }
-.btn-primary {
-
+tr.new-car > td {
+	color: #d6613e !important;
 }
 
 .transport-table, .water-table, .air-table, .other-table {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 16px;
     background: white;
-		
+
     border-collapse: collapse;
     text-align: left;
     margin: 0 auto 20px;
