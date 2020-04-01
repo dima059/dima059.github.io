@@ -180,7 +180,27 @@ ul {
     border-spacing: 2px;
     border-color: grey;
 }
+.table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 16px;
+    background: #e8edff;
+		color: #669;
+		transition: .3s linear;
+}
 
+.table.table-hover > tbody > tr > td{
+    transition: .3s linear;
+}
+
+.table-hover tbody tr:hover,
+            .table-hover tbody tr:hover td,
+            .table-hover tbody tr:hover th{
+                background:#ccddff !important;
+            }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #ccddff;
+}
 .my-table {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 16px;
