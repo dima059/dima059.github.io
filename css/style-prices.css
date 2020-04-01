@@ -200,6 +200,10 @@ tr.new-car > td {
 		color: #669;
 		transition: .3s linear;
 }
+.my-tables {
+	margin-left: 20px;
+	margin-right: 20px;
+}
 
 .table.table-hover > tbody > tr > td{
     transition: .3s linear;
@@ -269,6 +273,7 @@ tr {
 	font-family: "MuseoSansCyrl-700", sans-serif;
 	font-size: 20px;
 	margin-top: 15px;
+	margin-left: 20px;
 }
 div .warn {
 	font-family: "MuseoSansCyrl-700", sans-serif;
