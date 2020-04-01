@@ -284,3 +284,7 @@ div .warn {
 .usd-eur {
 	color: green;
 }
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
