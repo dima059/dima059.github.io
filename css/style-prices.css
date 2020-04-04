@@ -259,13 +259,14 @@ tr {
 .transport-table tr:hover td, .water-table tr:hover td, .air-table tr:hover td, .other-table tr:hover td, .my-table tr:hover td{
 	background: #ccddff;
 }
-#searchInp {
+.searchInput {
 	font-size: 16px;
 	padding: 12px 20px 12px 20px;
 	border: 1px solid #ddd;
 	margin-top: 5px;
 	margin-bottom: 12px;
-	width: 96.5%;
+	width: 100%;
+	box-sizing: border-box;
 	border-radius: 7px;
 }
 .tName {
@@ -285,13 +286,12 @@ tr {
 	border: 1px solid #bbb;
 	border-radius: 7px;
 	color: white;
-	margin-left: 20px;
-	margin-right: 20px;
+
 	margin-bottom: 20px;
 }
 .search {
-	margin-left: 20px;
-	margin-right: 20px;
+	padding: 12px;
+	margin: 20px;
 }
 .usd-eur {
 	color: green;
