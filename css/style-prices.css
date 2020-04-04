@@ -285,6 +285,12 @@ div .warn {
 	border: 1px solid #bbb;
 	border-radius: 7px;
 	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.search {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .usd-eur {
 	color: green;
