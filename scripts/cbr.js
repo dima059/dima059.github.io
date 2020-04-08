@@ -2,7 +2,7 @@ function CBR_XML_Daily_Ru(rates) {
   function trend(current, previous) {
     return '';
   }
-	
+
   var USDrate = rates.Valute.USD.Value.toFixed(2);
   var USD = document.getElementById('USD');
   USD.innerHTML = USD.innerHTML.replace('00.0000', USDrate);
