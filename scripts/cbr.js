@@ -15,6 +15,7 @@ function CBR_XML_Daily_Ru(rates) {
   var carsEuro = document.getElementsByClassName("euro");
   var carsEuroUsed = document.getElementsByClassName("euroUsed");
   var carsEuroSell = document.getElementsByClassName("euroSell");
+  var carsDonat = document.getElementsByClassName("donat");
   var price, priceUsed, priceSell;
   for (i=0;i<carsEuro.length;i++)
   {
@@ -49,4 +50,16 @@ function CBR_XML_Daily_Ru(rates) {
 	  carsDollUsed[i].textContent = priceUsed + " ₽";
 	  carsDollSell[i].textContent = priceSell + " ₽";
   }
+  var table = document.getElementById('gta5cars');
+    for (var r = 1, n = table.rows.length; r < n; r++) {
+        price = table.rows[r].cells[1].textContent;
+        donat = parseInt(price * 0.0001);
+        donat = new Intl.NumberFormat('de-DE').format(donat);
+        formattedPrice = new Intl.NumberFormat('de-DE').format(price);
+        table.rows[r].cells[1].textContent = formattedPrice + " ₽";
+        if (price<999999999999) {
+          console.log("yes");
+          table.rows[r].cells[3].textContent = donat + " ₽";
+        }
+    }
 }
