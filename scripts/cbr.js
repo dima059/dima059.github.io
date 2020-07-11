@@ -50,10 +50,11 @@ function CBR_XML_Daily_Ru(rates) {
 	  carsDollUsed[i].textContent = priceUsed + " ₽";
 	  carsDollSell[i].textContent = priceSell + " ₽";
   }
+  //donat = price * 0.001
   var table = document.getElementById('gta5cars');
     for (var r = 1, n = table.rows.length; r < n; r++) {
         price = table.rows[r].cells[1].textContent;
-        donat = parseInt(price * 0.0001);
+        donat = parseInt(price * 0.001);
         donat = new Intl.NumberFormat('de-DE').format(donat);
         formattedPrice = new Intl.NumberFormat('de-DE').format(price);
         table.rows[r].cells[1].textContent = formattedPrice + " ₽";
