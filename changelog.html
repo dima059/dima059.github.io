@@ -5,15 +5,42 @@
     <title>CCD</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/select.css"/>
 	  <link rel="stylesheet" media="screen,projection" href="scripts/UItoTop/css/ui.totop.css"/>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark transparent">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" width="60" class="d-inline-block align-center" alt="logo">
-            CCDPlanet
-          </a>
+          <div class="select_wrap">
+            <ul class="default_option">
+                <li>
+                    <div class="option">
+                      <a class="navbar-brand-white">
+                        <img src="img/logo.png" width="65" class="d-inline-block align-center" alt="logo">
+                        CCDPlanet MTA
+                      </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="select_ul">
+              <li>
+                  <div class="option">
+                    <a class="navbar-brand" href="">
+                      <img src="img/logo.png" width="48" class="d-inline-block align-center" alt="logo">
+                      CCDPlanet MTA
+                    </a>
+                  </div>
+              </li>
+              <li>
+                  <div class="option">
+                    <a class="navbar-brand" href="changelog5.html">
+                      <img src="img/ccd.png" width="52" class="d-inline-block align-center" alt="logo">
+                      CCDPlanet RageMP
+                    </a>
+                  </div>
+              </li>
+            </ul>
+          </div>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -133,8 +160,18 @@
   			</div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    $(".default_option").click(function(){
+      $(this).parent().toggleClass("active");
+    })
 
-
+    $(".select_ul li").click(function(){
+      var currentele = $(this).html();
+      $(".default_option li").html(currentele);
+      $(this).parents(".select_wrap").removeClass("active");
+    })
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

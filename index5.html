@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CCD</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/select.css"/>
+	  <link rel="stylesheet" media="screen,projection" href="scripts/UItoTop/css/ui.totop.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark transparent">
+        <div class="container">
+          <div class="select_wrap">
+            <ul class="default_option">
+                <li>
+                    <div class="option">
+                      <a class="navbar-brand-white">
+                        <img src="img/ccd.png" width="65" class="d-inline-block align-center" alt="logo">
+                        CCDPlanet RageMP
+                      </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="select_ul">
+                <li>
+                    <div class="option">
+                      <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" width="48" class="d-inline-block align-center" alt="logo">
+                        CCDPlanet MTA
+                      </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="option">
+                      <a class="navbar-brand" href="">
+                        <img src="img/ccd.png" width="52" class="d-inline-block align-center" alt="logo">
+                        CCDPlanet RageMP
+                      </a>
+                    </div>
+                </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="navbar" style="">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index5.html">Главная страница</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="prices5.html">Расценки на автомобили</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chats5.html">Наши беседы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="changelog5.html">Changelog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Custom navbar
+  	<div class="main-menu-div">
+  	<ul class="main-menu">
+  		<div class="left">
+  		<li class="main-menu-img main-menu-logo"><a href=""><img class="logo" src="img/logo.png" alt="logo"></a></li>
+  		<li class="main-menu-logo main-menu-text"><a href="">CCDPlanet</a></li></div>
+  		<div class="right">
+  		<li class="main-menu-item"><a href="index.html" class="current">Главная страница</a></li>
+  		<li class="main-menu-item"><a href="prices.html">Расценки на автомобили</a></li>
+  		<li class="main-menu-item"><a href="">Прочее</a></li>
+  		<li class="main-menu-item"><a href="">Ещё</a></li></div>
+  	</ul>
+  	</div>
+    -->
+  	<div class="header-servers">Сервера CCDPlanet RageMP:</div>
+  	<hr class="line">
+
+    <div class="row servers-1-line">
+  			<div class="server-box col-md-3 col-xs-4 col-sm-4">
+  			<p class="server-info">СЕРВЕР №1<br>rage1.ccdplanet.ru:22105</p><br>
+        <a class="btn btn-primary my-btn connect-btn" role="button" href="rage://v/connect?ip=185.169.135.186:22105">ПОДКЛЮЧИТЬСЯ</a>
+
+  			</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(".default_option").click(function(){
+      $(this).parent().toggleClass("active");
+    })
+
+    $(".select_ul li").click(function(){
+      var currentele = $(this).html();
+      $(".default_option li").html(currentele);
+      $(this).parents(".select_wrap").removeClass("active");
+    })
+    </script>
+  </body>
+</html>
