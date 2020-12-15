@@ -102,3 +102,24 @@ function searchTransport() {
 	}
 	invisible=0;
 }
+
+function showdiv() {
+	var input, filter, container, cars, i, h5, txtValue, visible = 0;
+	input = document.getElementById("searchInp");
+	filter = input.value.toUpperCase();
+	container = document.getElementsByClassName("products")[0];
+	cars = container.getElementsByClassName("product-card");
+	for (i=0; i<cars.length; i++) {
+		h5 = cars[i].getElementsByTagName("h5")[0];
+		if (h5) {
+			txtValue = h5.textContent;
+			if (txtValue.toUpperCase().indexOf(filter) > -1) {
+				cars[i].style.display="";
+				visible++;
+			} else {
+				cars[i].style.display="none";
+			}
+		}	
+
+	}
+}

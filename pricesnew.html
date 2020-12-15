@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/select.css"/>
+    <link rel="stylesheet" type="text/css" href="css/test.css"/>
 	  <link rel="stylesheet" media="screen,projection" href="scripts/UItoTop/css/ui.totop.css"/>
   </head>
   <body>
@@ -74,20 +75,7 @@
         </div>
       </div>
   </nav>
-  <!-- Custom navbar
-	<div class="main-menu-div">
-	<ul class="main-menu">
-		<div class="left">
-		<li class="main-menu-img main-menu-logo"><a href=""><img class="logo" src="img/logo.png" alt="logo"></a></li>
-		<li class="main-menu-logo main-menu-text"><a href="">CCDPlanet</a></li></div>
-		<div class="right">
-		<li class="main-menu-item"><a href="index.html">Главная страница</a></li>
-		<li class="main-menu-item"><a href="prices.html" class="current">Расценки на автомобили</a></li>
-		<li class="main-menu-item"><a href="">Прочее</a></li>
-		<li class="main-menu-item"><a href="">Ещё</a></li></div>
-	</ul>
-	</div>
-  -->
+
 	<div class="header">Транспорт сервера:</div>
 	<hr class="line">
 
@@ -118,7 +106,7 @@
 	незначительно отличаться от указанных ниже.<br><br>
 	Узнать цену авто в оригинальной валюте можно при наведении на цену салона.</p></div>
   <div class="my-tables">
-	   <input class="searchInput" type="text" id="searchInp" onkeyup="searchTransport()" placeholder="Найти транспорт..">
+	   <input class="searchInput" type="text" id="searchInp" onkeyup="showdiv()" placeholder="Найти транспорт..">
   </div>
 
   <label class="switch switcher">
@@ -128,7 +116,107 @@
 
   <p><a name="cars"></a></p>
 	<p class="tName">Легковые автомобили:</p>
-	<!--<table class="transport-table">-->
+	
+  <section class="products">
+		<div class="product-card">
+			<div class="product-image">
+				<img src="https://sun9-11.userapi.com/impf/c858220/v858220863/703cd/-Y6SgGm-8L8.jpg?size=1920x1080&quality=96&proxy=1&sign=53a0f958879fb70bd28096d6938308ad&type=album">
+			</div>
+			<div class="product-info">
+				<h5><b>Aston Martin Vantage</b></h5>
+        <h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+        <img src="https://sun9-18.userapi.com/impf/c851324/v851324651/8a8a9/mNriGfTIjs4.jpg?size=2351x1323&quality=96&proxy=1&sign=84b2edbc8a9db11486696bc2a347bd11&type=album">
+      </div>
+			<div class="product-info">
+				<h5><b>Audi R8</b></h5>
+				<h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+        <img src="https://sun9-43.userapi.com/impg/iij4oH9rdZThJ7cHhseM8WW1dMZlzfskLgPqyw/zRGu5Wo78R4.jpg?size=1886x859&quality=96&proxy=1&sign=412723c0d1240bb697a9f56e97eaa52d&type=album">
+      </div>
+			<div class="product-info">
+				<h5><b>Audi RS6</b></h5>
+				<h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+        <img src="https://sun9-49.userapi.com/impf/XwdFeHOqZvgQK_CNLxjz1UKUX3Kwatmmlg9DXg/QV4dSE-GSpg.jpg?size=2351x1323&quality=96&proxy=1&sign=f4c472cea8c146e4e35c26d0861abb15&type=album">
+      </div>
+			<div class="product-info">
+				<h5><b>Audi RS7</b></h5>
+				<h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+        <img src="https://sun9-36.userapi.com/impf/c851324/v851324651/8a8d1/dz4mi5hNN_E.jpg?size=2351x1323&quality=96&proxy=1&sign=a92f5700396e7bacee9827b4244a3216&type=album">
+      </div>
+			<div class="product-info">
+				<h5><b>Audi S5</b></h5>
+				<h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+        <img src="https://sun9-72.userapi.com/impg/c854216/v854216594/1a68ef/KyKw1vFKq0s.jpg?size=1680x779&quality=96&proxy=1&sign=c44487e3e9c42977888b298774127460&type=album">
+      </div>
+			<div class="product-info">
+				<h5><b>Bentley Continental GT</b></h5>
+				<h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+        <img src="https://sun9-64.userapi.com/impf/c851324/v851324651/8aa54/DeUGK7P8fyU.jpg?size=2351x1323&quality=96&proxy=1&sign=8c5d0937dbc09d1e69153e22170b3b7d&type=album">
+      </div>
+			<div class="product-info">
+				<h5><b>BMW 530i E39</b></h5>
+				<h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+		
+		<div class="product-card" >
+			<div class="product-image">
+        <img src="https://sun9-20.userapi.com/impf/c851424/v851424774/177e1a/9ThW26EhbcY.jpg?size=1920x1080&quality=96&proxy=1&sign=1ea23cd5b7e43f7d4fa8cc21be0267e4&type=album">
+      </div>
+			<div class="product-info">
+				<h5><b>BMW 750Li xDrive M Sport €</b></h5>
+				<h6>Цена салона:</h6>
+        <h6>Цена б/у:</h6>
+        <h6>Цена продажи на б/у:</h6>
+			</div>
+		</div>
+    
+		
+	</section>
+
   <div class="row servers-1-line">
       <div class="auto-box col-md-3 col-xs-4 col-sm-4">
         <p><img src="https://sun3-12.userapi.com/ydC2G71j2gSzZzqIt9MpQgeazVG2jW5v729V5Q/WIEzzS2KnTo.jpg"
@@ -168,171 +256,7 @@
           Цена салона: 5.000.000 ₽<br>Цена б/у: 4.200.000 ₽<br>Цена продажи на бу: 3.500.000 ₽</p><br>
       </div>
   </div>
-  <div class="my-tables">
-  <table class="table table-hover my-table transport-table" id="cars">
-		<thead>
-			<tr class="th-transport">
-			<th scope="col">Название</th>
-			<th scope="col">Цена салона</th>
-			<th scope="col">Цена б/у</th> <!-- data-sort-method="none" -->
-			<th scope="col">Цена продажи на б/у</th>
-			</tr>
-    </thead>
-    <tbody>
-			<tr><td>ВАЗ 1111 Ока</td><td data-sort='000025000'>25.000 ₽</td><td data-sort='000000000'>-</td><td data-sort='000025000'>17.500 ₽</td></tr>
-			<tr><td>ВАЗ 2107</td><td data-sort='000070000'>70.000 ₽</td><td data-sort='000000000'>-</td><td data-sort='000070000'>49.000 ₽</td></tr>
-			<tr><td>ВАЗ 2108</td><td data-sort='000075000'>75.000 ₽</td><td data-sort='000000000'>-</td><td data-sort='000075000'>52.500 ₽</td></tr>
-			<tr><td>ВАЗ 2121 Нива</td><td data-sort='000550000'>550.000 ₽</td><td data-sort='000550000'>462.000 ₽</td><td data-sort='000550000'>385.000 ₽</td></tr>
-			<tr><td>ВАЗ 2170 Приора</td><td data-sort='000500000'>500.000 ₽</td><td data-sort='000500000'>420.000 ₽</td><td data-sort='000500000'>350.000 ₽</td></tr>
-      <tr><td>ВАЗ Лада Веста</td><td data-sort='000950000'>950.000 ₽</td><td data-sort='000950000'>798.000 ₽</td><td data-sort='000950000'>665.000 ₽</td></tr>
-			<tr class="new-car"><td>Alfa Romeo Giulia</td><td data-sort='003000000'>3.000.000 ₽</td><td data-sort='003000000'>2.520.000 ₽</td><td data-sort='003000000'>2.100.000 ₽</td></tr>
-      <tr><td>Aston Martin Vantage</td><td data-sort='014900000'>14.900.000 ₽</td><td data-sort='014900000'>12.516.000 ₽</td><td data-sort='014900000'>10.430.000 ₽</td></tr>
-			<tr><td>Apollo Intesna Emozine<span class="usd-eur" title="Данное авто продается за евро"> € </span></td><td class="euro" title="2.300.000 €" data-sort='205275000'>2300000</td><td class="euroUsed" data-sort='205275000'></td><td class="euroSell" data-sort='205275000'></td></tr>
-			<tr><td>Audi S5</td><td data-sort='004400000'>4.400.000 ₽</td><td data-sort='004400000'>3.696.000 ₽</td><td data-sort='004400000'>3.080.000 ₽</td></tr>
-			<tr><td>Audi RS6<span class="usd-eur" title="Данное авто продается за евро"> € </span></td><td class="euro" title="115.000 €" data-sort='010263500'>115000</td><td class="euroUsed" data-sort='010263500'></td><td class="euroSell" data-sort='010263500'></td></tr>
-			<tr><td>Audi RS7</td><td data-sort='009500000'>9.500.000 ₽</td><td data-sort='009500000'>7.980.000 ₽</td><td data-sort='009500000'>6.650.000 ₽</td></tr>
-      <tr><td>Audi R8<span class="usd-eur" title="Данное авто продается за евро"> € </span></td><td class="euro" title="215.000 €" data-sort='019188500'>215000</td><td class="euroUsed" data-sort='019188500'></td><td class="euroSell" data-sort='019188500'></td></tr>
-      <tr><td>Bentley Continental GT</td><td data-sort='015000000'>15.000.000 ₽</td><td data-sort='015000000'>12.600.000 ₽</td><td data-sort='015000000'>10.500.000 ₽</td></tr>
-      <tr><td>BMW M5 E34</td><td data-sort='000320000'>320.000 ₽</td><td data-sort='000320000'>268.800 ₽</td><td data-sort='000320000'>224.000 ₽</td></tr>
-			<tr><td>BMW 530i E39</td><td data-sort='000400000'>400.000 ₽</td><td data-sort='000400000'>336.000 ₽</td><td data-sort='000400000'>280.000 ₽</td></tr>
-			<tr><td>BMW M2 F87</td><td data-sort='004000000'>4.000.000 ₽</td><td data-sort='004000000'>3.360.000 ₽</td><td data-sort='004000000'>2.800.000 ₽</td></tr>
-      <tr class="new-car"><td>BMW M3 E30</td><td data-sort='000450000'>450.000 ₽</td><td data-sort='000450000'>378.000 ₽</td><td data-sort='000450000'>315.000 ₽</td></tr>
-      <tr><td>BMW M3 Е92</td><td data-sort='002500000'>2.500.000 ₽</td><td data-sort='002500000'>2.100.000 ₽</td><td data-sort='002500000'>1.750.000 ₽</td></tr>
-      <tr><td>BMW M4 F83 Convertible</td><td data-sort='005000000'>5.000.000 ₽</td><td data-sort='005000000'>4.200.000 ₽</td><td data-sort='005000000'>3.500.000 ₽</td></tr>
-      <tr><td>BMW M5 E60</td><td data-sort='003500000'>3.500.000 ₽</td><td data-sort='003500000'>2.940.000 ₽</td><td data-sort='003500000'>2.450.000 ₽</td></tr>
-			<tr><td>BMW M5 F10</td><td data-sort='007000000'>7.000.000 ₽</td><td data-sort='007000000'>5.880.000 ₽</td><td data-sort='007000000'>4.900.000 ₽</td></tr>
-			<tr><td>BMW M5 F90</td><td data-sort='009500000'>9.500.000 ₽</td><td data-sort='009500000'>7.980.000 ₽</td><td data-sort='009500000'>6.650.000 ₽</td></tr>
-			<tr><td>BMW M8 Competition</td><td data-sort='014000000'>14.000.000 ₽</td><td data-sort='014000000'>11.760.000 ₽</td><td data-sort='014000000'>9.800.000 ₽</td></tr>
-			<tr><td>BMW X5M F85</td><td data-sort='010300000'>10.300.000 ₽</td><td data-sort='010300000'>8.652.000 ₽</td><td data-sort='010300000'>7.210.000 ₽</td></tr>
-			<tr><td>BMW 750Li xDrive M Sport<span class="usd-eur" title="Данное авто продается за евро"> € </span></td><td class="euro" title="300.000 €" data-sort='026770000'>300000</td><td class="euroUsed" data-sort='026770000'></td><td class="euroSell" data-sort='026770000'></td></tr>
-			<tr><td>Bugatti Chiron Super Sport<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="3.870.000 $" data-sort='295474000'>3870000</td><td class="dollUsed" data-sort='295474000'></td><td class="dollSell" data-sort='295474000'></td></tr>
-			<tr><td>Cadillac Escalade ESV Platinum</td><td data-sort='007000000'>7.000.000 ₽</td><td data-sort='007000000'>5.880.000 ₽</td><td data-sort='007000000'>4.900.000 ₽</td></tr>
-      <tr><td>Dodge Charger R/T 426</td><td data-sort='006000000'>6.000.000 ₽</td><td data-sort='006000000'>5.040.000 ₽</td><td data-sort='006000000'>4.200.000 ₽</td></tr>
-			<tr><td>Dodge Challenger SRT Demon</td><td data-sort='009000000'>9.000.000 ₽</td><td data-sort='009000000'>7.560.000 ₽</td><td data-sort='009000000'>6.300.000 ₽</td></tr>
-			<tr><td>Ford F-150 Raptor 2017<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="50.000 $" data-sort='003817000'>50000</td><td class="dollUsed" data-sort='003817000'></td><td class="dollSell" data-sort='003817000'></td></tr>
-			<tr><td>Ford GT</td><td data-sort='027000000'>27.000.000 ₽</td><td data-sort='027000000'>22.680.000 ₽</td><td data-sort='027000000'>18.900.000 ₽</td></tr>
-			<tr><td>Ferrari 488 Pista<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="350.000 $" data-sort='026722000'>350000</td><td class="dollUsed" data-sort='026722000'></td><td class="dollSell" data-sort='026722000'></td></tr>
-      <tr><td>Ferrari 812 Superfast<span class="usd-eur" title="Данное авто продается за евро"> € </span></td><td class="euro" title="370.000 €" data-sort='033022000'>370000</td><td class="euroUsed" data-sort='033022000'></td><td class="euroSell" data-sort='033022000'></td></tr>
-      <tr><td>Ferrari California<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="190.000 $" data-sort='014504000'>190000</td><td class="dollUsed" data-sort='014504000'></td><td class="dollSell" data-sort='014504000'></td></tr>
-			<tr><td>Koenigsegg Agera R<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="2.000.000 $" data-sort='152700000'>2000000</td><td class="dollUsed" data-sort='152700000'></td><td class="dollSell" data-sort='152700000'></td></tr>
-			<tr><td>Lamborghini Urus</td><td data-sort='025000000'>25.000.000 ₽</td><td data-sort='025000000'>21.000.000 ₽</td><td data-sort='025000000'>17.500.000 ₽</td></tr>
-			<tr><td>Lamborghini Huracan<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="310.000 $" data-sort='023668000'>310000</td><td class="dollUsed" data-sort='023668000'></td><td class="dollSell" data-sort='023668000'></td></tr>
-			<tr><td>Lamborghini Aventador<span class="usd-eur" title="Данное авто продается за евро"> € </span></td><td class="euro" title="435.000 €" data-sort='038848500'>435000</td><td class="euroUsed" data-sort='038848500'></td><td class="euroSell" data-sort='038848500'></td></tr>
-			<tr><td>Lexus LX570</td><td data-sort='007400000'>7.400.000 ₽</td><td data-sort='007400000'>6.216.000 ₽</td><td data-sort='007400000'>5.180.000 ₽</td></tr>
-			<tr><td>Lexus GS-F</td><td data-sort='006500000'>6.500.000 ₽</td><td data-sort='006500000'>5.460.000 ₽</td><td data-sort='006500000'>4.550.000 ₽</td></tr>
-			<tr><td>Mazda 6 MPS</td><td data-sort='000600000'>600.000 ₽</td><td data-sort='000600000'>504.000 ₽</td><td data-sort='000600000'>420.000 ₽</td></tr>
-			<tr><td>Mazda RX7</td><td data-sort='000900000'>900.000 ₽</td><td data-sort='000900000'>756.000 ₽</td><td data-sort='000900000'>630.000 ₽</td></tr>
-      <tr><td>Mazda RX8</td><td data-sort='000950000'>950.000 ₽</td><td data-sort='000950000'>798.000 ₽</td><td data-sort='000950000'>665.000 ₽</td></tr>
-      <tr><td>McLaren 720S<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="300.000 $" data-sort='022900000'>300000</td><td class="dollUsed" data-sort='022900000'></td><td class="dollSell" data-sort='022900000'></td></tr>
-			<tr><td>McLaren SLR C199 '05<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="400.000 $" data-sort='030540000'>400000</td><td class="dollUsed" data-sort='030540000'></td><td class="dollSell" data-sort='030540000'></td></tr>
-			<tr><td>Mercedes-Benz С63 AMG</td><td data-sort='002600000'>2.600.000 ₽</td><td data-sort='002600000'>2.184.000 ₽</td><td data-sort='002600000'>1.820.000 ₽</td></tr>
-      <tr class="new-car"><td>Mercedes-Benz CLS 63 W218</td><td data-sort='004700000'>4.700.000 ₽</td><td data-sort='004700000'>3.948.000 ₽</td><td data-sort='004700000'>3.290.000 ₽</td></tr>
-      <tr><td>Mercedes-Benz SL65 AMG</td><td data-sort='003500000'>3.500.000 ₽</td><td data-sort='003500000'>2.940.000 ₽</td><td data-sort='003500000'>2.450.000 ₽</td></tr>
-			<tr><td>Mercedes-Benz W213 E63s</td><td data-sort='009500000'>9.500.000 ₽</td><td data-sort='009500000'>7.980.000 ₽</td><td data-sort='009500000'>6.650.000 ₽</td></tr>
-      <tr><td>Mercedes-Benz W212 E63</td><td data-sort='006500000'>6.500.000 ₽</td><td data-sort='006500000'>5.460.000 ₽</td><td data-sort='006500000'>4.550.000 ₽</td></tr>
-			<tr><td>Mercedes-Benz GT63 4Matic+</td><td data-sort='013500000'>13.500.000 ₽</td><td data-sort='013500000'>11.340.000 ₽</td><td data-sort='013500000'>9.450.000 ₽</td></tr>
-			<tr><td>Mercedes-Benz G500 2018</td><td data-sort='009500000'>9.500.000 ₽</td><td data-sort='009500000'>7.980.000 ₽</td><td data-sort='009500000'>6.650.000 ₽</td></tr>
-			<tr><td>Mercedes-Benz G65 AMG </td><td data-sort='015000000'>15.000.000 ₽</td><td data-sort='015000000'>12.600.000 ₽</td><td data-sort='015000000'>10.500.000 ₽</td></tr>
-			<tr><td>Mercedes-Benz AMG GT</td><td data-sort='015000000'>15.000.000 ₽</td><td data-sort='015000000'>12.600.000 ₽</td><td data-sort='015000000'>10.500.000 ₽</td></tr>
-      <tr><td>Mercedes-Benz S63 4MATIC+Lang</td><td data-sort='014000000'>14.000.000 ₽</td><td data-sort='014000000'>11.760.000 ₽</td><td data-sort='014000000'>9.800.000 ₽</td></tr>
-      <tr><td>Mitsubishi Lancer Evo IX</td><td data-sort='001400000'>1.400.000 ₽</td><td data-sort='001400000'>1.176.000 ₽</td><td data-sort='001400000'>980.000 ₽</td></tr>
-			<tr><td>Mitsubishi Lancer Evo X</td><td data-sort='001400000'>1.400.000 ₽</td><td data-sort='001400000'>1.176.000 ₽</td><td data-sort='001400000'>980.000 ₽</td></tr>
-      <tr><td>Nissan 350Z<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="12.500 $" data-sort='000954000'>12500</td><td class="dollUsed" data-sort='000954000'></td><td class="dollSell" data-sort='000954000'></td></tr>
-      <tr><td>Nissan Silvia S13</td><td data-sort='000300000'>300.000 ₽</td><td data-sort='000300000'>252.000 ₽</td><td data-sort='000300000'>210.000 ₽</td></tr>
-			<tr><td>Nissan Silvia S15</td><td data-sort='000675000'>675.000 ₽</td><td data-sort='000675000'>567.000 ₽</td><td data-sort='000675000'>472.500 ₽</td></tr>
-      <tr><td>Nissan Skyline R32</td><td data-sort='001000000'>1.000.000 ₽</td><td data-sort='001000000'>840.000 ₽</td><td data-sort='001000000'>700.000 ₽</td></tr>
-			<tr><td>Nissan Skyline R34 GT-R</td><td data-sort='001100000'>1.100.000 ₽</td><td data-sort='001100000'>924.000 ₽</td><td data-sort='001100000'>770.000 ₽</td></tr>
-			<tr><td>Nissan GTR 2017</td><td data-sort='007500000'>7.500.000 ₽</td><td data-sort='007500000'>6.300.000 ₽</td><td data-sort='007500000'>5.250.000 ₽</td></tr>
-			<tr><td>Porsche 911 Carrera 4S</td><td data-sort='011600000'>11.600.000 ₽</td><td data-sort='011600000'>9.744.000 ₽</td><td data-sort='011600000'>8.120.000 ₽</td></tr>
-			<tr><td>Porsche 918 Spyder<span class="usd-eur" title="Данное авто продается за евро"> € </span></td><td class="euro" title="991.000 €" data-sort='088442100'>991000</td><td class="euroUsed" data-sort='088442100'>1</td><td class="euroSell" data-sort='088442100'></td></tr>
-			<tr><td>Porsche Panamera</td><td data-sort='014000000'>14.000.000 ₽</td><td data-sort='014000000'>11.760.000 ₽</td><td data-sort='014000000'>9.800.000 ₽</td></tr>
-			<tr><td>Range Rover SVR</td><td data-sort='009200000'>9.200.000 ₽</td><td data-sort='009200000'>7.728.000 ₽</td><td data-sort='009200000'>6.440.000 ₽</td></tr>
-      <tr><td>Rolls Royce Cullinan</td><td data-sort='035000000'>35.000.000 ₽</td><td data-sort='035000000'>29.400.000 ₽</td><td data-sort='035000000'>24.500.000 ₽</td></tr>
-      <tr class="new-car"><td>Rolls Royce Phantom VIII</td><td data-sort='035000000'>35.000.000 ₽</td><td data-sort='035000000'>29.400.000 ₽</td><td data-sort='035000000'>24.500.000 ₽</td></tr>
-      <tr><td>Rolls Royce Wraith</td><td data-sort='025500000'>25.500.000 ₽</td><td data-sort='025500000'>21.420.000 ₽</td><td data-sort='025500000'>17.850.000 ₽</td></tr>
-			<tr><td>Shelby GT500</td><td data-sort='004700000'>4.700.000 ₽</td><td data-sort='004700000'>3.948.000 ₽</td><td data-sort='004700000'>3.290.000 ₽</td></tr>
-			<tr><td>Skoda Octavia VRS A7</td><td data-sort='002100000'>2.100.000 ₽</td><td data-sort='002100000'>1.764.000 ₽</td><td data-sort='002100000'>1.470.000 ₽</td></tr>
-      <tr class="new-car"><td>Subaru BRZ</td><td data-sort='001550000'>1.550.000 ₽</td><td data-sort='001550000'>1.302.000 ₽</td><td data-sort='001550000'>1.085.000 ₽</td></tr>
-      <tr><td>Subaru Impreza WRX STi</td><td data-sort='000650000'>650.000 ₽</td><td data-sort='000650000'>546.000 ₽</td><td data-sort='000650000'>455.000 ₽</td></tr>
-      <tr><td>Tesla Cybertruck<span class="usd-eur" title="Данное авто продается за доллары"> $ </span></td><td class="doll" title="55.000 $" data-sort='004199000'>55000</td><td class="dollUsed" data-sort='004199000'></td><td class="dollSell" data-sort='004199000'></td></tr>
-      <tr><td>Toyota Sprinter Trueno AE86 </td><td data-sort='000190000'>190.000 ₽</td><td data-sort='000190000'>159.600 ₽</td><td data-sort='000190000'>133.000 ₽</td></tr>
-			<tr><td>Toyota Supra</td><td data-sort='001350000'>1.350.000 ₽</td><td data-sort='001350000'>1.134.000 ₽</td><td data-sort='001350000'>945.000 ₽</td></tr>
-      <tr><td>Toyota Supra A90</td><td data-sort='005500000'>5.500.000 ₽</td><td data-sort='005500000'>4.620.000 ₽</td><td data-sort='005500000'>3.850.000 ₽</td></tr>
-			<tr><td>Toyota Camry XV55</td><td data-sort='002500000'>2.500.000 ₽</td><td data-sort='002500000'>2.100.000 ₽</td><td data-sort='002500000'>1.750.000 ₽</td></tr>
-			<tr><td>Volkswagen Golf IV</td><td data-sort='000350000'>350.000 ₽</td><td data-sort='000350000'>294.000 ₽</td><td data-sort='000350000'>245.000 ₽</td></tr>
-      <tr><td>Volkswagen Golf VII GTI</td><td data-sort='001500000'>1.500.000 ₽</td><td data-sort='001500000'>1.260.000 ₽</td><td data-sort='001500000'>1.050.000 ₽</td></tr>
-		</tbody>
-	</table>
-</div>
-	<p><a name="boats"></a></p>
-	<p class="tName">Водный транспорт:</p>
-  <div class="my-tables">
-	<table class="table table-hover my-table water-table" id="boats">
-    <thead>
-      <tr class="th-water">
-			<th>Название</th>
-			<th>Цена салона</th>
-			<th>Цена продажи на б/у</th>
-			</tr>
-    </thead>
-    <tbody>
-			<tr><td>Надувная лодка</td><td data-sort='00110000'>110.000 ₽</td><td data-sort='00077000'>77.000 ₽</td></tr>
-			<tr><td>Reefer</td><td data-sort='01700000'>1.700.000 ₽</td><td data-sort='01190000'>1.190.000 ₽</td></tr>
-			<tr><td>Tropic</td><td data-sort='01950000'>1.950.000 ₽</td><td data-sort='01365000'>1.365.000 ₽</td></tr>
-			<tr><td>Blade</td><td data-sort='03750000'>3.750.000 ₽</td><td data-sort='02625000'>2.625.000 ₽</td></tr>
-			<tr><td>Wellcraft 38 Scarab KV</td><td data-sort='04250000'>4.250.000 ₽</td><td data-sort='02975000'>2.975.000 ₽</td></tr>
-			<tr><td>Lampadati Toro</td><td data-sort='04750000'>4.750.000 ₽</td><td data-sort='03325000'>3.325.000 ₽</td></tr>
-			<tr><td>Princess 50</td><td data-sort='14500000'>14.500.000 ₽</td><td data-sort='10150000'>10.150.000 ₽</td></tr>
-		</tbody>
-	</table>
-</div>
-	<p><a name="air"></a></p>
-	<p class="tName">Воздушный транспорт:</p>
-  <div class="my-tables">
-	<table class="table table-hover my-table air-table" id="air">
-    <thead>
-      <tr class="th-air">
-			<th>Название</th>
-			<th>Цена салона</th>
-			<th>Цена продажи на б/у</th>
-			</tr>
-    </thead>
-    <tbody>
-			<tr><td>Robinson R22</td><td data-sort='0021000000'>21.000.000 ₽</td><td data-sort='0014700000'>14.700.000 ₽</td></tr>
-			<tr><td>MBB Bo 105</td><td data-sort='0053000000'>53.000.000 ₽</td><td data-sort='0037100000'>37.100.000 ₽</td></tr>
-			<tr><td>Eurocopter EC130</td><td data-sort='0087000000'>87.000.000 ₽</td><td data-sort='00609000000'>60.900.000 ₽</td></tr>
-			<tr><td>Ми-26</td><td data-sort='1800000000'>1.800.000.000 ₽</td><td data-sort='1260000000'>1.260.000.000 ₽</td></tr>
-		</tbody>
-	</table>
-</div>
-	<p><a name="other"></a></p>
-	<p class="tName">Прочий транспорт:</p>
-  <div class="my-tables">
-	<table class="table table-hover my-table other-table" id="other">
-    <thead>
-      <tr class="th-other">
-			<th>Название</th>
-			<th>Цена салона</th>
-			<th>Цена б/у</th>
-			<th>Цена продажи на б/у</th>
-			</tr>
-    </thead>
-		<tbody>
-			<tr><td>ИЖ Юпитер 5</td><td data-sort='0030000'>30.000 ₽</td><td data-sort='0000000'>-</td><td data-sort='0021000'>21.000 ₽</td></tr>
-			<tr><td>Ducati FRC900</td><td data-sort='0220000'>220.000 ₽</td><td data-sort='0184800'>184.800 ₽</td><td data-sort='0154000'>154.000 ₽</td></tr>
-			<tr><td>Suzuki Hayabusa</td><td data-sort='0700000'>700.000 ₽</td><td data-sort='0558000'>558.000 ₽</td><td data-sort='0490000'>490.000 ₽</td></tr>
-			<tr><td>Harley Davidson</td><td data-sort='0900000'>900.000 ₽</td><td data-sort='0756000'>756.000 ₽</td><td data-sort='0630000'>630.000 ₽</td></tr>
-			<tr><td>Pizzaboy</td><td data-sort='0010000'>10.000 ₽</td><td data-sort='0000000'>-</td><td data-sort='0007000'>7.000 ₽</td></tr>
-			<tr><td>Mitsubishi Canter</td><td data-sort='0320000'>320.000 ₽</td><td data-sort='0268800'>268.800</td><td data-sort='0224000'>224.000 ₽</td></tr>
-			<tr><td>Камаз 53215</td><td data-sort='1350000'>1.350.000 ₽</td><td data-sort='0000000'>-</td><td data-sort='0945000'>945.000 ₽</td></tr>
-			<tr><td>Ford Transit</td><td data-sort='1800000'>1.800.000 ₽</td><td data-sort='1512000'>1.512.000 ₽</td><td data-sort='1260000'>1.260.000 ₽</td></tr>
-			<tr><td>Scania R620</td><td data-sort='1900000'>1.900.000 ₽</td><td data-sort='0000000'>-</td><td data-sort='1330000'>1.330.000 ₽</td></tr>
-			<tr class="new-car"><td>Mercedes-Benz Sprinter</td><td data-sort='5000000'>5.000.000 ₽</td><td data-sort='4200000'>4.200.000 ₽</td><td data-sort='3500000'>3.500.000 ₽</td></tr>
-			<tr><td>Mercedes-Benz O345</td><td data-sort='4000000'>4.000.000 ₽</td><td data-sort='0000000'>-</td><td data-sort='2800000'>2.800.000 ₽</td></tr>
-			<tr><td>Volvo Keolis</td><td data-sort='8000000'>8.000.000 ₽</td><td data-sort='0000000'>-</td><td data-sort='5600000'>5.600.000 ₽</td></tr>
-		</tbody>
-	</table>
-</div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 	<script src="scripts/UItoTop/js/easing.js" type="text/javascript"></script>
