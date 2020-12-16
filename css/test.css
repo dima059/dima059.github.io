@@ -55,7 +55,7 @@ label {
 	padding: 2%;
 	flex: 1 25%;
     border-radius: 7px;
-    margin: 0 10px 10px 0;
+    margin: 5px;
 	background-color: #FFF;
 	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 }
@@ -109,9 +109,7 @@ label {
 
 @media (min-width: 601px) {
     
-    .products :nth-child(3n+3){
-        margin: 0 0 10px 0;
-    }
+    
     .products {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -121,19 +119,22 @@ label {
 
 @media (min-width: 451px) and (max-width: 600px) {
     
-    .products :nth-child(2n+2){
-        margin: 0 0 10px 0;
-    }
 	.products {
         grid-template-columns: 1fr 1fr;
     }
 	
 }
 
-@media  (max-width: 450px) {
-	.product-card {
-        margin: 0 0 10px 0;
+@media  (min-width: 301px) and (max-width: 450px) {
+
+	.products {
+        grid-template-columns: 1fr 1fr;
     }
+	
+}
+
+@media  (max-width: 300px) {
+
 	.products {
         grid-template-columns: 1fr;
     }
