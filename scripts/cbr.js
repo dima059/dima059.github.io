@@ -12,12 +12,13 @@ function CBR_XML_Daily_Ru(rates) {
   var EUR = document.getElementById('EUR');
   EUR.innerHTML = EUR.innerHTML.replace('00.0000', EURrate);
   EUR.innerHTML += trend(rates.Valute.EUR.Value, rates.Valute.EUR.Previous);
+
   var carsEuro = document.getElementsByClassName("euro");
   var carsEuroUsed = document.getElementsByClassName("euroUsed");
   var carsEuroSell = document.getElementsByClassName("euroSell");
   var carsDonat = document.getElementsByClassName("donat");
   var price, priceUsed, priceSell;
-  for (i=0;i<carsEuro.length;i++)
+  for (i=0; i<carsEuro.length; i++)
   {
 	  price = carsEuro[i].textContent*EUR.textContent;
 	  price = Math.round(price);
