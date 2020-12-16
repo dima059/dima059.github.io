@@ -29,10 +29,10 @@ function CBR_XML_Daily_Ru(rates) {
         carsEuroUsed[i].textContent = priceUsed + " ₽";
         carsEuroSell[i].textContent = priceSell + " ₽";
     }
-    /*var carsDoll = document.getElementsByClassName("doll");
+    var carsDoll = document.getElementsByClassName("doll");
     var carsDollUsed = document.getElementsByClassName("dollUsed");
     var carsDollSell = document.getElementsByClassName("dollSell");
-    for (i=0;i<carsDoll.length;i++)
+    for (i = 0;i < carsDoll.length; i++)
     {
         price = carsDoll[i].textContent*USD.textContent;
         price = Math.round(price);
@@ -46,7 +46,11 @@ function CBR_XML_Daily_Ru(rates) {
         carsDoll[i].textContent = price + " ₽";
         carsDollUsed[i].textContent = priceUsed + " ₽";
         carsDollSell[i].textContent = priceSell + " ₽";
-    }*/
+    }
     
+  }
+
+  function showInfo(){
+      
   }
   
