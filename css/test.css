@@ -131,7 +131,37 @@ label {
 	}
 }
 
-@media(hover: none) and (pointer: coarse),  (hover: hover) and (pointer: coarse){ /*Android*/
+@media(hover: none) and (pointer: coarse){ /*Android*/
+	.product-card.flip .flipper {
+		transform: rotateY(180deg);
+	}
+	
+	.info, .return{
+		background-color: rgb(255, 255, 255);
+		border-radius: 50%;
+		width: 28px;
+		height: 28px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.329);
+		cursor: pointer;
+		position: absolute;
+		top: 18px;
+		left: 18px;
+	}
+
+	.info{
+		color: rgb(224, 54, 2);
+		
+	}
+
+	.return{
+		color: rgb(224, 54, 2);
+	}
+}
+
+@media(hover: hover) and (pointer: coarse){ /*Android*/
 	.product-card.flip .flipper {
 		transform: rotateY(180deg);
 	}
