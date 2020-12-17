@@ -131,7 +131,7 @@ label {
 	}
 }
 
-@media(hover: none) and (pointer: coarse) { /*Android*/
+@media(hover: none) and (pointer: coarse),  (hover: hover) and (pointer: coarse){ /*Android*/
 	.product-card.flip .flipper {
 		transform: rotateY(180deg);
 	}
