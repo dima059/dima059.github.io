@@ -62,15 +62,13 @@ label {
 	perspective: 1000;
 }
 
-.product-card:hover .flipper, .product-card.hover .flipper {
-	transform: rotateY(180deg);
-}
-
 .flipper {
- transition: 0.6s;
- transform-style: preserve-3d;
- 
- position: relative;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+	height: 100%;
+	width: 100%;
 }
 
 .front, .back {
@@ -79,6 +77,8 @@ label {
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	width: 100%;
 }
 .front {
 	z-index: 2;
@@ -117,62 +117,49 @@ label {
 	right: 18px;
 }
 
-.info{
-	background-color: rgb(255, 255, 255);
-	border-radius: 50%;
-	width: 28px;
-	height: 28px;
-	display: inline-flex;
-    align-items: center;
-	justify-content: center;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.329);
-	cursor: pointer;
-	position: absolute;
-	color: rgb(224, 54, 2);
-	top: 18px;
-	left: 18px;
-}
-
 .noWrap {
 	white-space: nowrap;
 }
 
-/*@media ( max-width: 920px ) {
-	
-	.product-card {
-		flex: 1 21%;
+@media(hover: hover) and (pointer: fine) { /*PC*/
+	.product-card:hover .flipper, .product-card.hover .flipper {
+		transform: rotateY(180deg);
 	}
-	
-	.products .product-card:first-child, 
-	.products .product-card:nth-child(2) {
-		flex: 2 46%;
+	.info, .return{
+		height: 0;
+		visibility: hidden;
 	}
-	
 }
 
-@media ( max-width: 600px ) {
-	
-	.product-card {
-		flex: 1 46%;
+@media(hover: none) and (pointer: coarse) { /*Android*/
+	.product-card.flip .flipper {
+		transform: rotateY(180deg);
 	}
 	
-}
+	.info, .return{
+		background-color: rgb(255, 255, 255);
+		border-radius: 50%;
+		width: 28px;
+		height: 28px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.329);
+		cursor: pointer;
+		position: absolute;
+		top: 18px;
+		left: 18px;
+	}
 
-@media ( max-width: 480px ) {
-	
-	h1 {
-		margin-bottom: 20px;
+	.info{
+		color: rgb(224, 54, 2);
+		
 	}
-	
-	.product-filter {
-		flex-direction: column;
+
+	.return{
+		color: rgb(224, 54, 2);
 	}
-	
-	.sort {
-		align-self: flex-start;
-	}
-	
-}*/
+}
 
 @media (min-width: 901px) {
     
@@ -223,3 +210,41 @@ label {
 	}
 	
 }
+
+
+/*@media ( max-width: 920px ) {
+	
+	.product-card {
+		flex: 1 21%;
+	}
+	
+	.products .product-card:first-child, 
+	.products .product-card:nth-child(2) {
+		flex: 2 46%;
+	}
+	
+}
+
+@media ( max-width: 600px ) {
+	
+	.product-card {
+		flex: 1 46%;
+	}
+	
+}
+
+@media ( max-width: 480px ) {
+	
+	h1 {
+		margin-bottom: 20px;
+	}
+	
+	.product-filter {
+		flex-direction: column;
+	}
+	
+	.sort {
+		align-self: flex-start;
+	}
+	
+}*/

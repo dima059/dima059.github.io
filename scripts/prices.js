@@ -51,6 +51,7 @@ function CBR_XML_Daily_Ru(rates) {
   }
 
   function showInfo(){
-      
+      var x = document.getElementById("x");
+      x.classList.toggle("flip");
   }
   

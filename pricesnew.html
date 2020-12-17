@@ -119,9 +119,12 @@
 	<p class="tName">Легковые автомобили:</p>
 	
   <section class="products">
-		<div class="product-card" ontouchstart="this.classList.toggle('hover');">
+		<div class="product-card" id="x">
       <div class="flipper">
         <div class="front">
+          <div title="Информация" class="info" onclick="showInfo()">
+            i
+          </div>
           <div class="product-image">
             <img src="https://sun9-11.userapi.com/impf/c858220/v858220863/703cd/-Y6SgGm-8L8.jpg?size=1920x1080&quality=96&proxy=1&sign=53a0f958879fb70bd28096d6938308ad&type=album">
           </div>
@@ -133,16 +136,27 @@
           </div>
         </div>
         <div class="back">
-          <h6>⚙ Макс.скорость: 390 км/ч (Бензин: 98+)
+          <div title="Назад" class="return" onclick="showInfo()">
+            <
+          </div>
+          <div class="product-image">
+            <img src="https://sun9-46.userapi.com/YPms5NVZisskwJY0wj-yVgPA-LWE1lSSaoL1pQ/2PFkjoKfep4.jpg?type=album">
+          </div>
+          <div class="product-info">
+          <h6>⚙ Макс.скорость: 390 км/ч (Бензин: 98+)</h6>
 
-🔧 Комплекты тюнинга:
-🔸 AMR - 800.000 ₽
-🔸 Forged Carbon - 480.000 ₽</h6>
+          <h6>🔧 Комплекты тюнинга:</h6>
+          <h6>🔸 AMR - 800.000 ₽</h6>
+          <h6>🔸 Forged Carbon - 480.000 ₽</h6>
+          </div>
         </div>
       </div>
 		</div>
 		
 		<div class="product-card new-product">
+      <div title="Информация" class="info" onclick="showInfo()">
+        i
+      </div>
       <div title="Данное авто продается за евро" class="euro-usd">
         €
       </div>
