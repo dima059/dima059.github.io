@@ -3,12 +3,12 @@ function CBR_XML_Daily_Ru(rates) {
     return '';
   }
 
-  var USDrate = rates.Valute.USD.Value.toFixed(2);
+  var USDrate = rates.Valute.USD.Value.toFixed(2) * 1.01;
   var USD = document.getElementById('USD');
   USD.innerHTML = USD.innerHTML.replace('00.0000', USDrate);
   USD.innerHTML += trend(rates.Valute.USD.Value, rates.Valute.USD.Previous);
 
-  var EURrate = rates.Valute.EUR.Value.toFixed(2);
+  var EURrate = rates.Valute.EUR.Value.toFixed(2) * 1.006;
   var EUR = document.getElementById('EUR');
   EUR.innerHTML = EUR.innerHTML.replace('00.0000', EURrate);
   EUR.innerHTML += trend(rates.Valute.EUR.Value, rates.Valute.EUR.Previous);
